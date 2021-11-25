@@ -5,7 +5,16 @@
   <version>0.0.1</version>
   <name>common-library</name>
   <description>common libraries</description>
+  <packaging>jar</packaging>
   
+  <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub an-mohammed Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/an-mohammed/common-library</url>
+   </repository>
+</distributionManagement>
+
 <!--   <dependencys>
 	  <dependency>
 	    <groupId>com.weblogic8</groupId>
@@ -15,4 +24,19 @@
 	    <systemPath>${project.basedir}/src/main/library/wls-api.jar</systemPath>
 	 </dependency>
 </dependencys> -->
+
+<build>
+<plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      
+    </plugins>
+</build>
+
 </project>
