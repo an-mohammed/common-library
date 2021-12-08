@@ -1,3 +1,19 @@
 
-external library
- new added project
+Common libraries and project specific library available in the script folder
+
+Partner portal
+ESM Dashboard (Dashboard)
+Dealer Portal 
+ooredoo Administrator
+Portal visit Survey
+
+CDR Portal (cc-calldetails)
+
+
+Some jars names are same but package structure is different in side the jar. So differentiate with version name and extended with application name.  
+
+SATCommission-2.0.jar for ooredoo administrator
+SATCommission.jar for Dealer 
+SendSMSProxy.jar for Dealer
+SendSMSProxy-portal-survey.jar for Portal visit survey
+
