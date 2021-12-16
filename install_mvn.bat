@@ -12,6 +12,10 @@ echo ********
 echo Start Dealer Dependency
 echo ********
 
+call mvn install:install-file -Dfile=library\apache-commons-lang.jar -DgroupId=com.common.lib -DartifactId=apache-commons-lang -Dversion=1.0 -Dpackaging=jar
+call mvn install:install-file -Dfile=library\commons-logging.jar -DgroupId=com.common.lib -DartifactId=commons-logging -Dversion=1.0 -Dpackaging=jar
+call mvn install:install-file -Dfile=library\struts.jar -DgroupId=com.common.lib -DartifactId=struts -Dversion=1.0 -Dpackaging=jar
+
 call mvn install:install-file -Dfile=library\weblogic.jar -DgroupId=com.common.lib -DartifactId=weblogic -Dversion=1.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=library\wls-api.jar -DgroupId=com.common.lib -DartifactId=wls-api -Dversion=1.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=library\SATCommission.jar -DgroupId=com.common.lib -DartifactId=SATCommission -Dversion=1.0 -Dpackaging=jar
@@ -26,6 +30,8 @@ call mvn install:install-file -Dfile=library\javax.resource_1.6.0.jar -DgroupId=
 echo ********
 echo Dashboard Dependecy 
 echo ********
+
+call mvn install:install-file -Dfile=library\all-themes-1.0.10.jar -DgroupId=com.common.lib -DartifactId=all-themes -Dversion=1.0.10 -Dpackaging=jar
 call mvn install:install-file -Dfile=library\DashBoardHLRService-v-2.0.jar -DgroupId=com.common.lib -DartifactId=DashBoardHLRService -Dversion=v-2.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=library\ESMSharedData.jar -DgroupId=com.common.lib -DartifactId=ESMSharedData -Dversion=1.0 -Dpackaging=jar
 call mvn install:install-file -Dfile=library\ESMSubscriptionManagement.jar -DgroupId=com.common.lib -DartifactId=ESMSubscriptionManagement -Dversion=1.0 -Dpackaging=jar
